@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>TradePlugin.DiscordNotifications</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <TargetFramework>net461</TargetFramework>
+    <Nullable>disable</Nullable>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="OpenMod.Unturned" Version="3.1.2" />
+    <PackageReference Include="OpenMod.Unturned.Redist" Version="3.21.21" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="config.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TradePlugin">
+      <HintPath>Libs\TradePlugin-reference.dll</HintPath>
+    </Reference>
+  </ItemGroup> 
+
+</Project>
